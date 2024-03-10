@@ -1,0 +1,12 @@
+.hamburger-btn{
+  background: transparent;
+  border: 1px solid;
+}
+
+.hamburger-btn .line{
+  transition: 1s;
+  transform-origin: center;
+}
+.hamburger-btn:hover :is(.top, .bottom){
+  y: 45px;
+}
