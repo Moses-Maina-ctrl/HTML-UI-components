@@ -4,9 +4,29 @@
 }
 
 .hamburger-btn .line{
-  transition: 1s;
+  transition: 
+    y 300ms ease-in 300ms,
+    rotate 300ms ease-in ,
+    opacity 0ms 300ms;
+  
   transform-origin: center;
+}
+.hamburger-btn:hover .line{
+  transition:
+    y 200ms ease-in,
+    rotate 200ms ease-in 200ms,
+    opacity 0ms 200ms;
 }
 .hamburger-btn:hover :is(.top, .bottom){
   y: 45px;
-}
+ }
+
+.hamburger-btn:hover .top {
+  rotate: 45deg;
+ }
+.hamburger-btn:hover .bottom {
+  rotate: -45deg;
+ }
+.hamburger-btn:hover .mid {
+  opacity: 0;
+} 
