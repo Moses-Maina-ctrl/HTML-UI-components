@@ -18,8 +18,15 @@
             <li><a href="#">Item3</a></li>
           </ul>
         </nav>
-      </div>
 
+        <button class="hamburger-btn"  aria-expanded="false" onclick="openCloseSidebar()">
+              <svg class="harmburger" viewBox="0 0 100 100" width="50">
+                <rect class="line top" width="80" height="10" x="10" y="25" rx="5"></rect>
+                <rect class="mid line" width="80" height="10" x="10" y="45" rx="5"></rect>
+                <rect class="bottom line" width="80" height="10" x="10" y="65" rx="5"></rect>
+              </svg>
+        </button> 
+        </div>
          <nav class="mobile-nav">
           <ul>
             <li><a href="#">Item1</a></li>
@@ -28,5 +35,17 @@
           </ul>
         </nav>
   </header>
+  <!-- Script For Opening and Closing Sidebar -->
+  <script>
+    function openCloseSidebar(){
+      const sidebar =  document.querySelector('.mobile-nav')
+      if(sidebar.style.display ==="none"){
+        sidebar.style.display = "block"
+      }else{
+        sidebar.style.display = "none";
+      }
+
+    }
+  </script>
 </body>
 </html>
