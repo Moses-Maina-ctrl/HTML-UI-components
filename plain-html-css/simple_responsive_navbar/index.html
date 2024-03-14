@@ -39,10 +39,16 @@
   <script>
     function openCloseSidebar(){
       const sidebar =  document.querySelector('.mobile-nav')
+      const btn = document.querySelector('.hamburger-btn');
+
       if(sidebar.style.display ==="none"){
         sidebar.style.display = "block"
+        btn.classList.add("active")
+
+
       }else{
         sidebar.style.display = "none";
+        btn.classList.remove("active")
       }
 
     }

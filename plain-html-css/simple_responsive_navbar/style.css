@@ -29,7 +29,7 @@ header{
   top:100%;
   width:100%;
   right:0;
-  background-color: rgba(255,255,255, 0.2); 
+  background-color: #eaeaea;
   backdrop-filter: blur(10px);
  box-shadow: -10px 0 10px rgba(0,0,0,0.1);
   text-align: center;
@@ -42,6 +42,7 @@ header{
   padding-bottom:10px;
 }
 a{
+  color:black;
   text-decoration: none;
 }
 .hamburger-btn{
@@ -58,23 +59,23 @@ a{
   
   transform-origin: center;
 }
-.hamburger-btn:hover .line{
+.hamburger-btn.active .line{
   transition:
     y 200ms ease-in,
     rotate 200ms ease-in 200ms,
     opacity 0ms 200ms;
 }
-.hamburger-btn:hover :is(.top, .bottom){
+.hamburger-btn.active :is(.top, .bottom){
   y: 45px;
  }
 
-.hamburger-btn:hover .top {
+.hamburger-btn.active .top {
   rotate: 45deg;
  }
-.hamburger-btn:hover .bottom {
+.hamburger-btn.active .bottom {
   rotate: -45deg;
  }
-.hamburger-btn:hover .mid {
+.hamburger-btn.active .mid {
   opacity: 0;
 }
 @media(max-width:768px)  {
